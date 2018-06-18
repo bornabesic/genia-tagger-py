@@ -8,7 +8,8 @@ Python wrapper for [GENIA tagger](http://www.nactem.ac.uk/tsujii/GENIA/tagger/)
 import os
 from geniatagger import GENIATagger
 
-tagger = GENIATagger(os.path.join(".", "geniatagger-3.0.2", "geniatagger"))
+executable_path = os.path.join(".", "geniatagger-3.0.2", "geniatagger")
+tagger = GENIATagger(executable_path)
 
 text = "Recombinant MIP-1-alpha induces a dose-dependent inhibition of different strains of \
         HIV-1, HIV-2, and simian immunodeficiency virus (SIV)."
